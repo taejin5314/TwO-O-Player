@@ -9,16 +9,14 @@ class Player
   end
 
   def info
-    "#{short_name}: #{lives}/#{LIVES}"
+    "#{@short_name}: #{lives}/#{LIVES}"
   end
 
   def lose
-    self.lives--
+    self.lives = self.lives - 1
   end
 
   def win_message
     "#{name} wins with a score of #{lives}/#{LIVES}"
   end
 end
-
-
