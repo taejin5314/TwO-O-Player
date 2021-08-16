@@ -6,7 +6,7 @@ class Game
   end
 
   def switch
-    self.turn = (turn == "Player 1") ? "Player 2" : "Player 1"
+    turn = (turn == "Player 1") ? "Player 2" : "Player 1"
     "#{turn}"
   end
 end
